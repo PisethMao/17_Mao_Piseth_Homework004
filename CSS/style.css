@@ -93,7 +93,7 @@ h1 {
   margin-bottom: 20px;
   cursor: pointer;
 }
-.accounts:focus{
+.accounts:focus {
   outline: none;
   box-shadow: 0 0 15px rgba(50, 205, 50, 0.7);
   transform: scale(1.02);
