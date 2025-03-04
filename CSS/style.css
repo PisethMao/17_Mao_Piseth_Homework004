@@ -36,7 +36,7 @@
   margin-bottom: 40px;
 }
 .profile {
-  background-image: url("../Image/my-picture.JPG");
+  background-image: url("../images/my-picture.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   display: inline-block;
