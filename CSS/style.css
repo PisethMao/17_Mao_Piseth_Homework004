@@ -2,6 +2,9 @@
   width: 600px;
   height: 835px;
   background: linear-gradient(135deg, #0a1f44, #122a60);
+  border-radius: 35px;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.3),
+    -10px -10px 30px rgba(255, 255, 255, 0.05);
 }
 .sub-header {
   display: flex;
@@ -45,6 +48,16 @@
   width: 15px;
   height: 15px;
   cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+.profile:hover {
+  transform: scale(1.05);
+}
+.profile:focus {
+  outline: 3px solid rgba(30, 144, 255, 0.8);
+  box-shadow: 0 0 12px rgba(30, 144, 255, 0.6);
+  transform: scale(1.1);
 }
 .name {
   display: flex;
@@ -78,6 +91,12 @@ h1 {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+.accounts:focus{
+  outline: none;
+  box-shadow: 0 0 15px rgba(50, 205, 50, 0.7);
+  transform: scale(1.02);
 }
 .progress-container {
   position: relative;
@@ -154,6 +173,11 @@ h1 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.fa-eye-slash:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 69, 0, 0.7);
+  border-radius: 50%;
 }
 .flex-riels-item {
   display: flex;
@@ -309,6 +333,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  cursor: pointer;
 }
 .fa-right-left {
   color: white;
@@ -332,6 +357,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  cursor: pointer;
 }
 .fa-chart-line {
   color: white;
@@ -355,6 +381,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  cursor: pointer;
 }
 .fa-hand-holding-dollar {
   color: white;
@@ -378,6 +405,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  cursor: pointer;
 }
 .fa-money-check-dollar {
   color: white;
@@ -389,10 +417,47 @@ h1 {
   font-size: 24px;
   margin: 0;
 }
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
+}
+.payments,
+.mobile-top-up,
+.pay-me,
+.scan-qr,
+.transfers,
+.deposits,
+.loans,
+.quick-cash,
+.accounts {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 15px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.payments:hover,
+.mobile-top-up:hover,
+.pay-me:hover,
+.scan-qr:hover,
+.transfers:hover,
+.deposits:hover,
+.loans:hover,
+.quick-cash:hover,
+.accounts:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+}
+.payments:focus,
+.mobile-top-up:focus,
+.pay-me:focus,
+.scan-qr:focus,
+.transfers:focus,
+.deposits:focus,
+.loans:focus,
+.quick-cash:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.7);
+  transform: scale(1.03);
 }
